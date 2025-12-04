@@ -48,7 +48,7 @@ CleanStart images are built on secure, minimal base operating systems and optimi
 ## Image Details
 
 - **Base Image**: CleanStart security-hardened base image
-- **Image Name**: `cleanstart/stunnel:latest-dev`
+- **Image Name**: `ghcr.io/cleanstart-containers/stunnel:latest-dev`
 - **Registry**: `{registry.example.com}/stunnel`
 - **Key Components**: Stunnel, OpenSSL library
 - **Tags Available**: `latest`, `latest-dev`
@@ -58,13 +58,13 @@ CleanStart images are built on secure, minimal base operating systems and optimi
 ### Pull Commands
 ```bash
 # Production image
-docker pull {registry.example.com}/stunnel:latest
+docker pull ghcr.io/cleanstart-containers/stunnel:latest
 
 # Development image
-docker pull {registry.example.com}/stunnel:latest-dev
+docker pull ghcr.io/cleanstart-containers/stunnel:latest-dev
 
-# From Docker Hub
-docker pull cleanstart/stunnel:latest
+# From GitHub
+docker pull ghcr.io/cleanstart-containers/stunnel:latest
 ```
 
 ### Run Commands
@@ -76,12 +76,12 @@ docker run -d --name stunnel-prod \
   --user 1000:1000 \
   -v /path/to/stunnel.conf:/etc/stunnel/stunnel.conf:ro \
   -v /path/to/certs:/etc/stunnel/certs:ro \
-  {registry.example.com}/stunnel:latest
+  ghcr.io/cleanstart-containers/stunnel:latest
 
 # Development/testing
 docker run -it --name stunnel-test \
   -v /path/to/stunnel.conf:/etc/stunnel/stunnel.conf:ro \
-  {registry.example.com}/stunnel:latest-dev
+  ghcr.io/cleanstart-containers/stunnel:latest-dev
 ```
 
 ## Architecture Support
@@ -94,10 +94,10 @@ CleanStart Stunnel images support multiple architectures to ensure compatibility
 ### Architecture-specific Pull Commands
 ```bash
 # AMD64
-docker pull --platform linux/amd64 {registry.example.com}/stunnel:latest
+docker pull --platform linux/amd64 ghcr.io/cleanstart-containers/stunnel:latest
 
 # ARM64
-docker pull --platform linux/arm64 {registry.example.com}/stunnel:latest
+docker pull --platform linux/arm64 ghcr.io/cleanstart-containers/stunnel:latest
 ```
 
 ## Directory Structure
