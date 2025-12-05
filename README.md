@@ -62,9 +62,6 @@ docker pull ghcr.io/cleanstart-containers/stunnel:latest
 
 # Development image
 docker pull ghcr.io/cleanstart-containers/stunnel:latest-dev
-
-# From GitHub
-docker pull ghcr.io/cleanstart-containers/stunnel:latest
 ```
 
 ### Run Commands
@@ -74,14 +71,16 @@ docker run -d --name stunnel-prod \
   --read-only \
   --security-opt=no-new-privileges \
   --user 1000:1000 \
-  -v /path/to/stunnel.conf:/etc/stunnel/stunnel.conf:ro \
+  -v /path/to/stunnel.conf:/etc/stunnel/certs.pem/stunnel.conf:ro \
   -v /path/to/certs:/etc/stunnel/certs:ro \
   ghcr.io/cleanstart-containers/stunnel:latest
+```
 
+```bash
 # Development/testing
-docker run -it --name stunnel-test \
-  -v /path/to/stunnel.conf:/etc/stunnel/stunnel.conf:ro \
-  ghcr.io/cleanstart-containers/stunnel:latest-dev
+docker run -it --name stunnel-test
+   -v /path/to/stunnel.conf:/etc/stunnel/certs.pem/stunnel.conf:ro
+   ghcr.io/cleanstart-containers/stunnel:latest-dev
 ```
 
 ## Architecture Support
