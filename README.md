@@ -146,7 +146,7 @@ Example configuration structure available in the sample-project directory.
 
 - **Official Documentation**: https://example.com/docs/stunnel
 - **Provenance / SBOM / Signature**: https://images.cleanstart.com/images/stunnel
-- **CleanStart All Images**: https://images.cleanstart.com
+- **CleanStart All Images**: https://images.cleanstart.com/images/stunnel/details
 - **CleanStart Community Images**: https://hub.docker.com/u/cleanstart
 - **Docker Hub**: https://hub.docker.com/r/cleanstart/stunnel
 
