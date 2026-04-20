@@ -140,15 +140,21 @@ Stunnel requires a configuration file that defines:
 
 Example configuration structure available in the sample-project directory.
 
-## Resources
-
-### Official Links
-
-- **Official Documentation**: https://example.com/docs/stunnel
-- **Provenance / SBOM / Signature**: https://images.cleanstart.com/images/stunnel
-- **CleanStart All Images**: https://images.cleanstart.com
-- **CleanStart Community Images**: https://hub.docker.com/u/cleanstart
-- **Docker Hub**: https://hub.docker.com/r/cleanstart/stunnel
+## Documentation Resources
+Essential links and resources for further information
+ 
+**CleanStart Images**: https://images.cleanstart.com/
+ 
+**Community Images**:
+**Docker Hub**: https://hub.docker.com/u/cleanstart<br>
+**GitHub**: https://github.com/cleanstart-containers<br>
+**AWS ECR Public Gallery**: https://gallery.ecr.aws/cleanstart/
+ 
+**Presence on Social Media**:
+**Community**: https://www.linkedin.com/groups/18324021/<br>
+**YouTube**: https://www.youtube.com/@CleanStartOfficial<br>
+ 
+**Contribute to Container Use Cases**: https://github.com/cleanstart-dev/cleanstart-use-cases/
 
 ## Vulnerability Disclaimer
 
